@@ -1,4 +1,4 @@
-*** SPDIF digital mixer ***
+# SPDIF digital mixer
 HW requirements:
  - Hifiberry Digi IO
  - Raspberry Pi 3B
@@ -7,12 +7,11 @@ SW requirements:
  - pipewire
  - pareceive
 
-
-*** Raspberry Pi OS ***
+# Raspberry Pi OS
 Raspberry pi os based on debian; as of May 3rd 2023 Debian version: 11 (bullseye)
 That can be checked in /etc/os-release
 
-*** Pipewire ***
+# Pipewire
 It needs to be installed from the backports source tree:
 ```
   echo "deb http://deb.debian.org/debian bullseye-backports main contrib non-free" | sudo tee /etc/apt/sources.list.d/bullseye-backports.list
