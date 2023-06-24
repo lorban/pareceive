@@ -98,7 +98,7 @@ The new interface can be tested with
 `mplayer some-51-audio-file.ac3 -vo null -ao pulse::input_surround_51`
 
 
-*** pareceive ***
+# pareceive
 
 Clone it from `https://github.com/lorban/pareceive` then build it. These libs will be needed:
 
