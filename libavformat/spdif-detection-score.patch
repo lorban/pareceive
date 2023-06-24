@@ -1,0 +1,13 @@
+diff --git a/libavformat/spdifdec.c b/libavformat/spdifdec.c
+index 1808fa9d65..05c155f49c 100644
+--- a/libavformat/spdifdec.c
++++ b/libavformat/spdifdec.c
+@@ -140,7 +140,7 @@  int ff_spdif_probe(const uint8_t *p_buf, int buf_size, enum AVCodecID *codec)
+                 break;
+ 
+             /* continue probing to find more sync codes */
+-            probe_end = FFMIN(buf + SPDIF_MAX_OFFSET, p_buf + buf_size - 1);
++            probe_end = FFMIN(buf + SPDIF_MAX_OFFSET + 1, p_buf + buf_size - 1);
+ 
+             /* skip directly to the next sync code */
+             if (!spdif_get_offset_and_codec(NULL, (buf[2] << 8) | buf[1],

@@ -1,0 +1,2 @@
+#!/bin/bash
+arecord -Dplug:iec958 -f S16_LE -r 48000 -c 2 -t raw --disable-channels --disable-format --disable-resample --disable-softvol | /home/lorban/github/pareceive/pareceive - input_surround_51
